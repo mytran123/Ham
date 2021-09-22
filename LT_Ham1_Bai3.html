@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Tạo hàm nhận vào hai tham số. Nếu giá trị của tham số thứ nhất
+    //lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+    //Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số
+
+    // let so1 = +prompt('số 1')
+    // let so2 = +prompt('số 2')
+    // let result = them(so1, so2);
+    // alert(result);
+    // function them(a,b) {
+    //     if(a > b) {
+    //         return a + ' lớn hơn ' + b
+    //     } else {
+    //         return a + b
+    //     }
+    // }
+
+    function thamSo(mot,hai) {
+        if(mot > hai) {
+            return "ST1 > ST2"
+        } else {
+            return mot + hai;
+        }
+    }
+    alert(thamSo(3,2))
+</script>
+</body>
+</html>

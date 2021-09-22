@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="searchStar()">Search</button>
+<script>
+  let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
+  let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
+  let input = prompt("Nhập vào tên ngôi sao: ")
+  let check = false
+
+  function searchStar() {
+      for(let i = 0; i < star.length; i++) {
+          if(input === star[i]) {
+              alert (constellation[i])
+              check = true
+              break
+          }
+      }
+      if (check === false) {
+          alert("Không tìm thấy")
+      }
+  }
+</script>
+</body>
+</html>

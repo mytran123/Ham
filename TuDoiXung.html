@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="tudoixung" value="">
+<button onclick="display()">Check</button>
+<div id="result"></div>
+<script>
+    function isPalindrome() {
+        let symmetry = document.getElementById(tudoixung).value;
+        let arr = symmetry.split("");
+        let first = 0
+        let last = arr.length - 1
+        while (first < last) {
+            if (arr[first] !== arr[last]) {
+                return false
+            }
+            first++
+            last--
+        }
+        return true
+    }
+
+    function display() {
+        if (isPalindrome()) {
+            document.getElementById("result").innerHTML = "Day la tu doi xung"
+        } else {
+            document.getElementById("result").innerHTML = "Day khong phai tu doi xung"
+        }
+    }
+
+</script>
+</body>
+</html>

@@ -7,12 +7,12 @@
 <body>
 
 <script>
+    //đặt cờ, true / false
   let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"]
   let constellation = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"]
   let input = prompt("Nhập vào tên ngôi sao: ")
 
-
-  function searchStar() {
+    function searchStar() {
       for(let i = 0; i < star.length; i++) {
           if(input === star[i]) {
               return constellation[i]

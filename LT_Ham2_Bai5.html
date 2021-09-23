@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  //Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất
+  // let a = 0;
+  // while(a != -1) {
+  //     a = prompt("Nhập vào số nguyên: ");
+  // }
+  // let integer1 = prompt("Nhập vào số nguyên thứ 1: ");
+  // let integer2 = prompt("Nhập vào số nguyên thứ 2: ");
+  // let integer3 = prompt("Nhập vào số nguyên thứ 3: ");
+  function minInteger(integer1,integer2,integer3) {
+      if(integer1 < integer2 && integer1 < integer3) {
+          alert(integer1);
+      } else if(integer2 < integer3) {
+          alert(integer2);
+      } else {
+          alert(integer3);
+      }
+  }
+  minInteger('5','3','4')
+</script>
+</body>
+</html>

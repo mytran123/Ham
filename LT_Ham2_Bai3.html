@@ -6,10 +6,15 @@
 </head>
 <body>
 <script>
-  //Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được
-  function multiply(number) {
-
-  multiply()
+    //Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được
+    function multiply(integer) {
+        let multiply = 1;
+        for (let i = 1; i <= integer; i++) {
+            multiply *= i;
+        }
+        alert(multiply);
+    }
+    multiply('5')
 </script>
 </body>
 </html>

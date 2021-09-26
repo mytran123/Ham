@@ -8,11 +8,15 @@
 <script>
   // Viết hàm truyền vào mảng số nguyên bất kỳ,
   // sau đó đảo ngược mảng số nguyên đó
-  function changeNumber(number) {
-      alert(number);
-      alert(changeNumber.reverse())
+  function reverse(arr) {
+      let newArr = [];
+      for (let i = 0; i < arr.length; i++) {
+          newArr[arr.length-1-i] = arr[i];
+      }
+      return newArr;
   }
-  changeNumber(1,5,3,4,2,0)
+
+  alert(reverse([1, 2, 3, 4, 5]));
 </script>
 </body>
 </html>
